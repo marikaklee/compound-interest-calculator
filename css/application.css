@@ -1,0 +1,57 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 100%;
+}
+
+.page-header {
+  background: #FF7C73;
+  color: white;
+}
+
+.page-header,
+.page-footer {
+  padding: 1rem;  
+  text-align: center;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.page-content {
+  padding: 2rem 0;
+}
+
+.cu-form {
+  margin: 0 auto;
+}
+
+.cu-form-wrapper {
+  width: 450px;
+  margin: 0 auto;
+}
+
+.cu-field-group {
+  margin: 2rem;
+}
+
+.cu-submit {
+  margin: 2rem;
+}
+
+.cu-label {
+  font-size: 1.5rem;
+}
+
+.cu-input {
+  display: block;
+}
+
+.cu-span {
+  font-size: 1.5rem;
+  display: block;
+  margin: 2rem 0rem;
+}

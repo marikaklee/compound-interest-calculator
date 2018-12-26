@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Real Estate Calculator</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<meta name="viewport" content="width=device-width">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="all" />
+
+	<link rel="stylesheet" href="css/application.css" type="text/css" media="all" />
+</head>
+<body>
+	<header role="banner" id="page_header" class="page-header">
+    	<h1>Compound Interest Calculator</h1>
+  	</header>
+	
+	<div class="cu-form-wrapper">
+		<form>
+			<div class="cu-field-group">
+				<label class="cu-label">Principle Amount</label>
+				<input class="cu-input" id="principal" type="text" name="principal" value=5000>
+			</div>
+			<div class="cu-field-group">
+				<label class="cu-label">Annual Interest Rate</label>
+				<input class="cu-input" id="rate" type="text" name="rate" value=5>
+			</div>
+			<div class="cu-field-group">
+				<label class="cu-label">Number of times per year</label>
+				<input class="cu-input" id="years" type="text" name="years" value=10>
+			</div>
+		</form>
+		<div class="cu-submit">
+			<input type="submit" onclick="showInput(event);">
+			<span class="cu-span" id="display"></span>
+		</div>
+	</div>
+	<script src="js/conversion.js"></script>
+</body>
+</html>
