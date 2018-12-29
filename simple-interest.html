@@ -17,17 +17,26 @@
 </head>
 <body>
 	<header role="banner" id="page_header" class="page-header">
-    	<h1>Compound Interest Calculator</h1>
+    	<h1>Real Estate Calculator</h1>
   	</header>
-	
+	<div class="topnav-background">
+		<div class="topnav">
+		  <a href="simple-interest.html">Simple Interest</a>
+		  <a href="compound-interest.html">Compound Interest</a>
+		  <a href="cap-rate.html">Cap Rate</a>
+		  <a href="taxable-income.html">Taxable Income</a>
+		</div>	
+	</div>
+	<script src="js/conversion.js"></script>
 	<div class="cu-form-wrapper">
+		<h1>Simple Interest</h1>
 		<form>
 			<div class="cu-field-group">
-				<label class="cu-label">Principle Amount</label>
+				<label class="cu-label">Principle Amount (%)</label>
 				<input class="cu-input" id="principal" type="text" name="principal" value=5000>
 			</div>
 			<div class="cu-field-group">
-				<label class="cu-label">Annual Interest Rate</label>
+				<label class="cu-label">Annual Interest Rate (%)</label>
 				<input class="cu-input" id="rate" type="text" name="rate" value=5>
 			</div>
 			<div class="cu-field-group">
@@ -36,7 +45,7 @@
 			</div>
 		</form>
 		<div class="cu-submit">
-			<input type="submit" onclick="showInput(event);">
+			<input type="submit" value="Calculate" onclick="calculateSimpleInterest();">
 			<span class="cu-span" id="display"></span>
 		</div>
 	</div>

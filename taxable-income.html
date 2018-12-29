@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Real Estate Calculator</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<meta name="viewport" content="width=device-width">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="all" />
+
+	<link rel="stylesheet" href="css/application.css" type="text/css" media="all" />
+</head>
+<body>
+	<header role="banner" id="page_header" class="page-header">
+    	<h1>Real Estate Calculator</h1>
+  	</header>
+	<div class="topnav-background">
+		<div class="topnav">
+		  <a href="simple-interest.html">Simple Interest</a>
+		  <a href="compound-interest.html">Compound Interest</a>
+		  <a href="cap-rate.html">Cap Rate</a>
+		  <a href="taxable-income.html">Taxable Income</a>
+		</div>	
+	</div>
+	<script src="js/conversion.js"></script>
+	<div class="cu-form-wrapper">
+		<h1>Taxable Income</h1>
+		<form>
+			<div class="cu-field-group">
+				<label>Net Operating Income ($)</label>
+				<input id="netOperatingIncome" type="text" name="netOperatingIncome" value=30000>
+			</div>
+			<div class="cu-field-group">
+				<label>Mortgage Interest ($)</label>
+				<input id="mortgageInterest" type="text" name="mortgageInterest" value=20500>
+			</div>
+			<div class="cu-field-group">
+				<label>Depreciation,<br>Real Property ($)</label>
+				<input id="depreciationProperty" type="text" name="depreciationProperty" value=7318>
+			</div>
+			<div class="cu-field-group">
+				<label>Depreciation,<br>Capital Additions ($)</label>
+				<input id="depreciationCapital" type="text" name="depreciationCapital" value=0>
+			</div>
+			<div class="cu-field-group">
+				<label>Amortization, Point ($)</label>
+				<input id="amortization" type="text" name="amortization" value=200>
+			</div>
+			<div class="cu-field-group">
+				<label>Interest Earned ($)</label>
+				<input id="interest" type="text" name="interest" value=85>
+			</div>
+		</form>
+		<div class="cu-submit">
+			<input type="submit" value="Calculate" onclick="calculateTaxableIncome();">
+			<span class="cu-span" id="display"></span>
+		</div>
+
+	</div>
+	<script src="js/conversion.js"></script>
+</body>
+</html>
